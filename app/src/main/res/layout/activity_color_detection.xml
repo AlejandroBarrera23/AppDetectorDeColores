@@ -1,0 +1,72 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Vista previa de la cámara -->
+    <TextureView
+        android:id="@+id/vista_camara"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Indicador para seleccionar un color -->
+    <View
+        android:id="@+id/marcador_color"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/borde_marcador" />
+
+    <!-- Previsualización del color escaneado -->
+    <View
+        android:id="@+id/previsualizacion_color"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:layout_centerHorizontal="true"
+        android:background="#CCCCCC" />
+
+    <!-- Texto que muestra el color detectado -->
+    <TextView
+        android:id="@+id/texto_color_detectado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color detectado: Ninguno"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="170dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:background="#FFFFFF"
+        android:padding="8dp" />
+
+    <!-- Botón para capturar el color en el marcador -->
+    <Button
+        android:id="@+id/btn_capturar_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capturar Color"
+        android:backgroundTint="#FF6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Botón para regresar al menú principal -->
+    <Button
+        android:id="@+id/btn_regresar_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:backgroundTint="#FF6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

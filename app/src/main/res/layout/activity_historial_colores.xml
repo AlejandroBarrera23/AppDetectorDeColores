@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Título del historial -->
+    <TextView
+        android:id="@+id/titulo_historial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Historial de Colores Detectados"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:textColor="#000000" />
+
+    <!-- Lista para mostrar los colores detectados -->
+    <ListView
+        android:id="@+id/lista_colores"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:padding="8dp"
+        android:background="#F5F5F5" />
+
+    <!-- Botón para regresar al menú principal -->
+    <Button
+        android:id="@+id/btn_regresar_historial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Regresar al menú principal"
+        android:backgroundTint="#FF6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
+
